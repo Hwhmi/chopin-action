@@ -39,6 +39,11 @@ jobs:
         git clone https://github.com/Winkmoon/xinran_xiaomi_kernel_chopin -b xinran android-kernel
         cd android-kernel
 
+    - name: 下载内核源码
+      run: |
+        cd xinran_xiaomi_kernel_chopin
+        curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v0.9.5
+
 
     - name: 设置ccache缓存
       uses: hendrikmuhs/ccache-action@v1.2
