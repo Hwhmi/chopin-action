@@ -41,7 +41,7 @@ jobs:
 
     - name: 拉ksu
       run: |
-        cd xinran_xiaomi_kernel_chopin
+        cd chopin action
         curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v0.9.5
 
 
