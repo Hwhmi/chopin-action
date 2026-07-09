@@ -37,11 +37,10 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
         git clone https://github.com/Hwhmi/chopin-action.git
-        cd android-kernel
+        cd chopin-action
 
     - name: 拉ksu
       run: |
-        cd chopin-action
         curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v0.9.5
 
 
