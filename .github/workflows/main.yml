@@ -49,7 +49,7 @@ jobs:
 
     - name: 开始编译内核
       run: |
-        cd $GITHUB_WORKSPACE/kernel_workspace/android-kernel
+        cd $GITHUB_WORKSPACE/kernel_workspace/chopin-action
         export PATH=$GITHUB_WORKSPACE/kernel_workspace/clang-aosp/bin:$GITHUB_WORKSPACE/kernel_workspace/gcc64/bin:$GITHUB_WORKSPACE/kernel_workspace/gcc32/bin:$PATH
         export KBUILD_BUILD_HOST=Xinran
         export KBUILD_BUILD_USER=@Xinran_StarBai
