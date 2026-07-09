@@ -36,7 +36,7 @@ jobs:
     - name: 下载内核源码
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
-        git clone https://github.com/Winkmoon/xinran_xiaomi_kernel_chopin
+        git clone https://github.com/Hwhmi/chopin-action.git
         cd android-kernel
 
     - name: 拉ksu
